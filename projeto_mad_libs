@@ -1,0 +1,281 @@
+# coding: UTF-8
+
+#variável para seleção de nível de dificuldade do jogo. 
+dificuldades_validas = ["facil", "medio", "dificil"]
+
+# variável para controle da dificuldade nas funções.
+dificuldade = 'controle'
+
+#variável para seleção da frase de acordo com cada nível de dificuldade. 
+frases = ['frase_facil', 'frase_medio', 'frase_dificil']
+
+#variável para seleção das respostas referentes a cada frase com lacunas. 
+respostas = ['respostas_facil', 'respostas_medio', 'respostas_dificil']
+
+#variáveis das frases dos 3 níveis de dificuldade e suas respostas. 
+
+frase_facil = '''E melhor ter varias ___1___ especificas do que poucas, longas e complexas. O comando indicado para este processo e o ___2___. Para este projeto, se uma funcao tem mais de 18 ___3___ ela deve ser ___4___ em outras.'''
+
+respostas_facil = ['funcoes', 'def', 'linhas', 'dividida']
+
+frase_medio = '''O ___1___ indica a posicao de um item em uma ___2___. Na linguagem ___3___,
+essa estrutura pode conter tanto ___4___ quanto numeros.''' 
+
+respostas_medio = ['indice', 'lista', 'python', 'strings']
+
+frase_dificil =  '''Para criar uma ___1___ usamos def. Entre as possibilidades de uso deste recurso esta o uso do ___2___, que realiza uma atividade enquanto determinada condicao for verdadeira. E necessario fornecer condicoes para interromper o ___3___ criado, para que ele nao seja ___4___. '''
+
+respostas_dificil = ['funcao', 'while', 'loop', 'infinito']
+
+#variável para localizar lacunas nos strings.
+lacunas = ['___1___', '___2___', '___3___', '___4___']
+
+#variável com a pergunta que questiona sobre o teor da lacuna.
+pergunta_lacuna = '\nQual a palavra que preenche corretamente a lacuna '
+
+# variável com string para resposta incorreta. 
+resposta_incorreta = '\nResposta incorreta, tente novamente. A palavra que preenche corretamente a lacuna '
+
+#variável com a frase que pede ao jogador para selecionar o nível. 
+selecao = "Digite um dos niveis de dificuldade (facil, medio ou dificil): "
+
+#variável para seleção inválida de nível 
+selecao_invalida = "Opcao invalida. Digite facil, medio ou dificil: "
+
+# função boas-vindas, diz olá ao jogador. 
+def boas_vindas():
+    print "\nOla, bem-vindo ao meu jogo!\n"
+  
+#função para seleção do nível de dificuldade do jogo. Imprime a frase adequada segundo o nível de dificuldade. 
+def pergunta_dificuldade():
+    dificuldades_validas = ['facil', 'medio', 'dificil']
+    dificuldade = raw_input(selecao).lower()
+    while dificuldade not in dificuldades_validas:
+        dificuldade = raw_input(selecao_invalida).lower()
+    print '\nVoce selecionou o nivel ' + dificuldade + '. ''\n\nVamos la!\n'
+    dificuldade = 'frase_' + dificuldade
+    if dificuldade == 'frase_facil':
+        print "A frase e: " + frase_facil
+    if dificuldade == 'frase_medio':
+        print "A frase e: " + frase_medio
+    if dificuldade == 'frase_dificil':
+        print "A frase e: " + frase_dificil
+        print dificuldade
+   
+# função pergunta o conteúdo da primeira lacuna da frase fácil
+def frase_facil_lacuna1():
+    respostas_facil = ['funcoes', 'def', 'linhas', 'dividida']
+    dificuldade = 'facil'
+    lacuna1 = raw_input('\nQual a palavra que preenche corretamente a lacuna 1? ').lower()
+    while lacuna1 not in respostas_facil:
+        lacuna1 = raw_input('\nResposta incorreta, tente novamente. A palavra que preenche corretamente a lacuna 1 e: ').lower
+    for lacuna1 in respostas_facil:
+        if lacuna1 == 'funcoes':   
+            print '\nResposta correta!\n'
+            print frase_facil.replace('___1___', 'funcoes')
+
+# função pergunta o conteúdo da segunda lacuna da frase fácil                  
+def frase_facil_lacuna2():
+    resposta1 = lacunas[0]
+    while resposta1 != 'funcoes':
+        break 
+    if resposta1 == lacunas[0]:
+        lacuna2 = raw_input('\nQual a palavra que preenche corretamente a lacuna 2? ').lower()
+    if lacuna2 != 'def':
+        raw_input('\nResposta incorreta, tente novamente. A palavra que preenche corretamente a lacuna 2 e: ').lower
+    if lacuna2 == 'def':
+        frase_facil2 = '''E melhor ter varias funcoes especificas do que poucas, longas e complexas. O comando indicado para este processo e o ___2___. Para este projeto, se uma funcao tem mais de 18 ___3___ ela deve ser ___4___ em outras.'''
+        print '\nResposta correta!\n'
+        print frase_facil2.replace ('___2___', 'def')
+
+# função pergunta o conteúdo da terceira lacuna da frase fácil               
+def frase_facil_lacuna3():
+    resposta2 = lacunas[1]
+    while resposta2 != 'def':
+        break 
+    if resposta2 == lacunas[1]:
+        frase_facil3 = '''E melhor ter varias funcoes especificas do que poucas, longas e complexas. O comando indicado para este processo e o def. Para este projeto, se uma funcao tem mais de 18 ___3___ ela deve ser ___4___ em outras.'''
+        lacuna3 = raw_input('\nQual a palavra que preenche corretamente a lacuna 3? ').lower()
+    if lacuna3 != 'linhas':
+        lacuna3 = raw_input('\nResposta incorreta, tente novamente. A palavra que preenche corretamente a lacuna 3 e: ').lower()
+    if lacuna3 == 'linhas':
+        print '\nResposta correta!\n'
+        print frase_facil3.replace ('___3___', 'linhas')
+
+# função pergunta o conteúdo da quarta lacuna da frase fácil                   
+def frase_facil_lacuna4():
+    resposta3 = lacunas[2]
+    while resposta3 != 'linhas':
+        break
+    if resposta3 == lacunas[2]:
+        frase_facil4 = '''E melhor ter varias funcoes especificas do que poucas, longas e complexas. O comando indicado para este processo e o def. Para este projeto, se uma funcao tem mais de 18 linhas ela deve ser ___4___ em outras.'''
+        lacuna4 = raw_input('\nQual a palavra que preenche corretamente a lacuna 4? ').lower()
+    if lacuna4 != 'dividida':
+        print '\nResposta incorreta, tente novamente. A palavra que preenche corretamente a lacuna 3 e: '
+    if lacuna4 == 'dividida':
+        print '\nResposta correta!\n'
+        print 'A frase completa e: "' + frase_facil4.replace ('___4___', 'linhas') + '" '
+        print "\nParabens, voce acertou! =)\nGame over."
+
+def frase_facil_total():
+    if dificuldade == 'facil':
+        frase_facil_lacuna1()
+        frase_facil_lacuna2()
+        frase_facil_lacuna3()
+        frase_facil_lacuna4()
+    
+# função pergunta o conteúdo da primeira lacuna da frase medio
+
+def frase_medio_lacuna1():
+    for dificuldade in dificuldades_validas:
+       while dificuldade != 'medio':
+          break
+       if dificuldade == 'medio':
+          lacuna1 = raw_input('\nQual2 a palavra que preenche corretamente a lacuna 1? ').lower()
+          if lacuna1 != 'indice':
+             lacuna1 = raw_input('\nResposta incorreta, tente novamente. A palavra que preenche corretamente a lacuna 1 e: ').lower
+          if lacuna1 == 'indice': 
+             print '\nResposta correta!\n'
+             print frase_medio.replace('___1___', 'indice')
+
+# função pergunta o conteúdo da segunda lacuna da frase medio               
+def frase_medio_lacuna2():
+    resposta1 = lacunas[0]
+    while resposta1 != 'indice':
+        break 
+    if resposta1 == lacunas[0]:
+        frase_medio2 = '''O indice indica a posicao de um item em uma ___2___. Na linguagem ___3___, essa estrutura pode conter tanto ___4___ quanto numeros.''' 
+        lacuna2 = raw_input('\nQual3 a palavra que preenche corretamente a lacuna 2? ').lower()
+    if lacuna2 != 'lista':
+        raw_input('\nResposta incorreta, tente novamente. A palavra que preenche corretamente a lacuna 2 e: ').lower
+    if lacuna2 == 'lista':
+        print '\nResposta correta!\n'
+        print frase_medio2.replace ('___2___', 'lista')
+            
+# função pergunta o conteúdo da terceira lacuna da frase medio
+def frase_medio_lacuna3():
+    resposta2 = lacunas[1]
+    while resposta2 != 'lista':
+       break 
+    if resposta2 == lacunas[1]:
+       frase_medio3 = '''O indice indica a posicao de um item em uma lista. Na linguagem ___3___, essa estrutura pode conter tanto ___4___ quanto numeros.''' 
+    lacuna3 = raw_input('\nQual5 a palavra que preenche corretamente a lacuna 3? ').lower()
+    if lacuna3 != 'python':
+       lacuna3 = raw_input('\nResposta incorreta, tente novamente. A palavra que preenche corretamente a lacuna 3 e: ').lower()
+    if lacuna3 == 'python':
+       print '\nResposta correta!\n'
+       print frase_medio3.replace ('___3___', 'python')
+       
+# função pergunta o conteúdo da quarta lacuna da frase medio                
+def frase_medio_lacuna4():
+    resposta3 = lacunas[2]
+    resposta4 = 0
+    while resposta3 != 'python':
+       break
+    if resposta3 == lacunas[2]:
+       frase_medio4 = '''E melhor ter varias funcoes especificas do que poucas, longas e complexas. O comando indicado para este processo e o def. Para este projeto, se uma funcao tem mais de 18 linhas ela deve ser ___4___ em outras.'''
+    lacuna4 = raw_input('\nQual4 a palavra que preenche corretamente a lacuna 4? ').lower()
+    if lacuna4 != 'strings':
+       print '\nResposta incorreta, tente novamente. A palavra que preenche corretamente a lacuna 3 e: '
+    if lacuna4 == 'strings':
+       print '\nResposta correta!\n'
+       print 'A frase completa e: "' + frase_medio4.replace ('___4___', 'strings') + '" '
+       print "\nParabens, voce acertou! =)\nGame over."
+       return dificuldade == 'medio'
+
+def frase_medio_total():
+    if dificuldade == 'frase_medio':
+        frase_medio_lacuna1()
+        frase_medio_lacuna2()
+        frase_medio_lacuna3()
+        frase_medio_lacuna4()
+    
+def frase_dificil_lacuna1():
+    respostas_dificil = ['funcao', 'while', 'loop', 'infinito']
+    lacuna1 = raw_input('\nQual a palavra que preenche corretamente a lacuna 1? ').lower()
+    if dificuldade == 'dificil':
+        print lacuna1 
+    while lacuna1 not in respostas_dificil:
+        lacuna1 = raw_input(pergunta_lacuna + '1?').lower()
+    for lacuna1 in respostas_dificil:
+        if lacuna1 == 'funcao':
+              print '\nResposta correta!\n'
+              print frase_dificil.replace('___1___', 'funcao')
+               
+def frase_dificil_lacuna2():
+    resposta1 = lacunas[0]
+    lacuna2 = raw_input('\nQual a palavra que preenche corretamente a lacuna 2? ').lower()
+    while resposta1 != respostas_dificil[0]:
+        break 
+    if resposta1 == lacunas[0]:
+        frase_dificil2 = '''Para criar uma funcao usamos def. Entre as possibilidades de uso deste recurso esta o uso do ___2___, que realiza uma atividade enquanto determinada condicao for verdadeira. E necessario fornecer condicoes para interromper o ___3___ criado, para que ele nao seja ___4___. '''
+        print lacuna2
+    if lacuna2 != respostas_dificil[1]:
+        lacuna2 = raw_input('\nResposta incorreta, tente novamente. A palavra que preenche corretamente a lacuna 2 e: ').lower
+    if lacuna2 == respostas_dificil[1]:
+        print '\nResposta correta!\n'
+        print frase_dificil2.replace ('___2___', 'while')
+            
+def frase_dificil_lacuna3():
+    resposta2 = lacunas[1]
+    while resposta2 != 'while':
+       break 
+    if resposta2 == lacunas[1]:
+       frase_dificil3 = '''Para criar uma funcao usamos def. Entre as possibilidades de uso deste recurso esta o uso do while, que realiza uma atividade enquanto determinada condicao for verdadeira. E necessario fornecer condicoes para interromper o ___3___ criado, para que ele nao seja ___4___. '''
+       lacuna3 = raw_input('\nQual a palavra que preenche corretamente a lacuna 3? ').lower()
+    if lacuna3 != 'loop':
+       lacuna3 = raw_input('\nResposta incorreta, tente novamente. A palavra que preenche corretamente a lacuna 3 e: ').lower()
+    if lacuna3 == 'loop':
+       print '\nResposta correta!\n'
+       print frase_dificil3.replace ('___3___', 'loop')
+                
+def frase_dificil_lacuna4():
+    resposta3 = lacunas[2]
+    while resposta3 != 'loop':
+       break
+    if resposta3 == lacunas[2]:
+       frase_dicil4 = '''Para criar uma funcao usamos def. Entre as possibilidades de uso deste recurso esta o uso do while, que realiza uma atividade enquanto determinada condicao for verdadeira. E necessario fornecer condicoes para interromper o loop criado, para que ele nao seja ___4___. '''
+       lacuna4 = raw_input('\nQual a palavra que preenche corretamente a lacuna 4? ').lower()
+    if lacuna4 != 'infinito':
+       print '\nResposta incorreta, tente novamente. A palavra que preenche corretamente a lacuna 4 e: '
+    if lacuna4 == 'infinito':
+       print '\nResposta correta!\n'
+       print 'A frase completa e: "' + frase_dicil4.replace ('___4___', 'infinito') + '" '
+       print "\nParabens, voce acertou! =)\nGame over."
+
+def frase_dificil_total():
+    if dificuldade == 'frase_dificil':
+        frase_dificil_lacuna1()
+        frase_dificil_lacuna2()
+        frase_dificil_lacuna3()
+        frase_dificil_lacuna4()
+   
+           
+boas_vindas()    
+pergunta_dificuldade()
+frase_facil_total()
+frase_medio_total()
+frase_dificil_total()
+
+
+
+#Sites consultados
+#https://docs.python.org/3/faq/programming.html#how-do-you-make-a-higher-order-function-in-python
+#https://python-packaging.readthedocs.io/en/latest/dependencies.html
+#https://julien.danjou.info/guide-python-static-class-abstract-methods/
+#http://pythonclub.com.br/introducao-classes-metodos-python-basico.html
+#https://github.com/rg3915/python-classes-metodos/tree/master/pythonBasico
+#https://www.devmedia.com.br/como-criar-minha-primeira-classe-em-python/38912
+#https://docs.python.org/2/tutorial/classes.html
+#http://alexflint.github.io/process-isolation/
+#https://github.com/alexflint/process-isolation
+#https://docs.python-guide.org/writing/structure/
+#https://stackoverflow.com/questions/27292698/separate-sections-in-python
+#https://realpython.com/inner-functions-what-are-they-good-for/
+#https://www.learnpython.org/en/Closures
+#https://docs.python.org/3/tutorial/classes.html
+#https://www.w3schools.com/python/python_classes.asp
+#https://jeffknupp.com/blog/2014/06/18/improve-your-python-python-classes-and-object-oriented-programming/
+#https://docs.python.org/2/library/functions.html#raw_input
+#https://www.tutorialspoint.com/python/string_replace.htm
+#https://stackoverflow.com/questions/4831680/if-function-a-is-required-only-by-function-b-should-a-be-defined-inside-b
