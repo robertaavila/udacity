@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>vetores</title>
+  <script type="text/javascript">
+    var vetor = new Array();
+
+    function adicionarnome(){
+      vetor[vetor.length] = document.getElementById('txtnome').value;
+      document.getElementById('vetortexto').innerHTML = vetor;
+    }
+
+    function remover(){
+      vetor.pop;
+      document.getElementById('vetortexto').innerHTML = vetor;
+    }
+
+    function mudarcor()inputnome, mudar){
+      if(mudar){
+        inputnome.style.background = "#A2B5CD";
+      }else {
+        inputnome.style.background = "#FFFFFF";
+      }
+    }
+
+
+  </script>
+</head>
+  <body>
+    <h1>trabalhando com vetores</h1>
+    <br>
+    <input type="text" id="txtnome"
+            onfocus="mudarcor(this, true)"
+            onblur="mudarcor(this, false)">
+    <br>
+    <button type="button" onclick="adicionarnome()">adicionar</button>
+    <button type="button" onclick="remover">remover</button>
+    <br>
+    <p id="vetortexto"></p>
+
+  </body>
+</html>
