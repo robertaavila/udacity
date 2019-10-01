@@ -1,0 +1,300 @@
+<resources>
+    <string name="app_name">Floripa Tour Guide</string>
+    <string name="category_passeios">Passeio</string>
+    <string name="category_comida">Comida</string>
+    <string name="category_praias">Praias</string>
+    <string name="category_trilhas">Trilhas</string>
+    <string name="item_destaques">Destaques</string>
+    <string name="item_resumo">Resumo</string>
+    <string name="intent_extra_item_titulo">ITEM_TITULO</string>
+
+    <string name="item_site">Site</string>
+    <string name="item_endereco">Endereco</string>
+    <string name="item_telefone">Telefone</string>
+
+
+    <!-- Passeios -->
+    <string name="passeios_anhatomirim_titulo">Ilha de Anhatomirim</string>
+    <string-array name="passeios_anhatomirim_destaques">
+        <item>A Ilha do Anhatomirim fica localizada numa região entre Governador Celso Ramos e Florianópolis, denominada Baía dos Golfinhos.
+        See all of Chicagos architectural masterpieces in a single passeios</item>
+        <item>o barco parte do centro da cidade as 10:30, passando por baixo da Ponte Hercílio Luz, que é o principal cartão postal da Ilha da Magia,
+            percorre toda a Baía Norte, e faz paradas para visitação nas Ilhas de Ratones (Fortaleza de Santo Antônio – séc. XVIII) e Anhatomirim
+            (Fortaleza de Santa Cruz – séc. XVIII)</item>
+    </string-array>
+
+    <string name="passeios_beira_mar_titulo">Beira-Mar Norte</string>
+    <string-array name="passeios_beira_mar_destaques">
+        <item> Com sete quilômetros de comprimento, é a principal via de ligação entre as praias do Norte
+        as praias do leste da ilha e o centro da cidade, caminho de quem chega na ilha pelo transporte rodoviário.</item>
+        <item>A beira-mar norte tem um ótimo calçadão para caminhadas e uma ciclovia que acompanha toda sua extensão.</item>
+        <item>Seu visual é muito bonito
+        e, pela orla e por ruas adentro, é enorme a variedade de bares e restaurantes.</item>
+    </string-array>
+
+    <string name="passeios_catedral_titulo">Catedral Metropolitana</string>
+    <string-array name="passeios_catedral_destaques">
+        <item>A história da Catedral Metropolitana começa no ano de 1675, quando o bandeirante Francisco
+        Dias Velho, fundador de Nossa Senhora do Desterro, começa a construir uma capela em homenagem à padroeira.
+        </item>
+        <item>
+        Como de costume na época, escolheu o local mais alto e visível da pequena vila.
+        </item>
+        <item>
+        Um dos principais chamarizes da Catedral Metropolitana é o acervo de arte sacra.
+        Seu interior abriga desde 1902 a escultura “Fuga para o Egito”, do artista tirolês Demetz Groeden.
+        </item>
+    </string-array>
+
+    <string name="passeios_costa_lagoa_titulo">Costa da Lagoa</string>
+    <string-array name="passeios_costa_lagoa_destaques">
+        <item>
+        A Costa da Lagoa é uma antiga vila de pescadores que fica numa parte isolada da Lagoa da Conceição, cercada por enormes morros
+            cobertos por densa Mata Atlântica.
+        </item>
+        <item>
+        Além da paisagem bucólica e preservada, que toma conta desse importante recanto da capital catarinense, a Costa da Lagoa é um
+            dos locais que ainda preservam resquícios da cultura deixada pelos imigrantes açorianos.
+        </item>
+        <item>
+        O acesso a localidade pode ser feito de duas formas: por trilhas, em meio a vegetação, ou por barco atravessando
+            as suaves aguas da Lagoa da Conceição.
+        </item>
+    </string-array>
+
+    <string name="passeios_fortaleza_titulo">Fortaleza de São José</string>
+    <string-array name="passeios_fortaleza_destaques">
+        <item>
+        Para ser utilizada como um dos vértices do triângulo defensivo da ilha, a Fortaleza de São José da Ponta Grossa começou a ser
+            construída em 1740 e foi concluída quatro anos mais tarde.
+        </item>
+        <item>
+        Após a invasão espanhola de 1777, a Fortaleza de São José da Ponta Grossa foi praticamente abandonada e somente quando foi
+            tombada como Patrimônio Histórico e Artístico Nacional, em 1938, começou a receber pequenas obras de restauração.
+        </item>
+        <item>
+        Por meio do Projeto Fortalezas, em 1989, a Universidade Federal de Santa Catarina se tornou responsável por sua manutenção
+            e administração.
+        </item>
+    </string-array>
+
+    <string name="passeios_ilha_campeche_titulo">Iha do Campeche</string>
+    <string-array name="passeios_ilha_campeche_destaques">
+        <item>
+        Entre as dezenas de belas praias de Florianópolis, uma delas se destaca pela cor de sua água,
+        a Ilha do Campeche, cujo mar cristalino nos remete às praias caribenhas e forma um cenário paradisíaco.
+        </item>
+        <item>
+        A Ilha do Campeche está localizada numa região de Floripa conhecida por Sul da Ilha, a uma distância de cerca
+        de 1,5 km das areias da Praia do Campeche.
+        </item>
+        <item>
+        Para visitá-la é preciso comprar o passeio com o transporte de barco que está disponível em três diferentes praias da cidade.
+        </item>
+        <item>
+        Considerada um importante sítio arqueológico, com dezenas de inscrições rupestres datadas de 5000 a 3500 a.C.
+        </item>
+        <item>
+        Desde julho do ano 2000 a ilha é tombada como Patrimônio Arqueológico e Paisagístico Nacional pelo IPHAN.
+        </item>
+    </string-array>
+
+
+    <!-- Comida -->
+    <string name="comida_uncle">Uncle Joe\'s</string>
+    <string name="resenha_uncle"> Hamburqueria no estilo americano localizada no Santa Mônica.</string>
+    <string-array name="detalhes_uncle">
+        <item>Uma das melhorias hamburguerias da cidade. Um dos clássicos da casa
+        é a batata frita com molho cheddar.
+        </item>
+        <item> A casa conta com uma versão vegetariana com falafel muito gostosa.
+        </item>
+        <item>Outra especilidade para quem gosta de pimenta é a batata com chili de carne e
+        pimenta jalapeño. </item>
+        <item>Entre as sobremesa está o milkshake de nutella.</item>
+    </string-array>
+
+    <string name="comida_sushinami">Sushinami</string>
+    <string name="resenha_sushinami">Um dos melhores sushis da cidade fica no Itacorubi.  </string>
+    <string-array name="detalhes_sushinami">
+        <item>Com menu tradicional, a casa
+        serve sempre peixe fresco e tem caipirinhas deliciosas.
+        </item>
+        <item>Entre as especilidades da casa está o sashimi, que é servido em cortes generosos.
+        </item>
+        <item>
+        Os 10% sobre o valor da conta são cobrados apenas em dinheiro.
+        </item>
+    </string-array>
+
+    <string name="comida_deli">Café Deli</string>
+    <string name="resenha_deli">Café de qualidade e cookies deliciosos</string>
+    <string-array name="detalhes_deli">
+        <item>A cafeteria serve uma grande variedade de saladas, lanches e wraps muito gostosos.
+        </item>
+        <item>Opções sem glúten e sem lactose disponíveis.</item>
+        <item>As mesas na calçada são uma ótima opção para dias de sol.</item>
+    </string-array>
+
+    <string name="comida_posto">Posto da Alfândega</string>
+    <string name="resenha_posto">Restaurante de frutos do mar localizado em Santo Antônio de Lisboa.</string>
+    <string-array name="detalhes_posto">
+        <item>As porções são generosas e a comida é muito saborosa.
+        </item>
+        <item>A caipirinha de pitanga é um clássico da casa, assim como o camarão empanado e a ostra gratinada.</item>
+        <item>O lado externo tem mesas com vista para o mar.
+        </item>
+    </string-array>
+
+    <string name="comida_sambaqui">Cerveja Sambaqui</string>
+    <string name="resenha_sambaqui">Cervejaria tradicional de Santa Catarina.</string>
+    <string-array name="detalhes_sambaqui">
+        <item>A casa serve chopp artesanal de produção própria e diversas opções de cervejas diferentes.
+        </item>
+        <item>Este bar que tem duas unidades: uma em Sambaqui e outra no Itacorubi.</item>
+        <item>Confira as datas com apresentações de música ao vivo.</item>
+    </string-array>
+
+    <string name="comida_forneria">Forneria Catarina</string>
+    <string-array name="detalhes_forneria">
+        <item>
+            Pizza de qualidade com sabores originais, como Trio de Cogumelos, que tem um público
+            cativo no Santa Mônica.
+        </item>
+        <item>
+            Também atendem pelo iFood e UberEats.
+        </item>
+
+    </string-array>
+
+    <!-- Praias -->
+
+    <string name="praias_joaquina">Joaquina</string>
+    <string-array name="praias_joaquina_detalhes">
+        <item>
+            A Joaquina é uma praia do Leste da Ilha que recebe capeonatos de surf e tem cerca de 3 km de extensão.
+        </item>
+        <item>
+            Ideal para surfistas e para quem gosta de caminhar.
+        </item>
+    </string-array>
+
+    <string name="praias_barra">Barra da Lagoa</string>
+    <string-array name="praias_barra_descricao">
+        <item>
+            Localiza-se no norte da ilha. Sua continuação é a praia de Moçambique.
+        </item>
+        <item>
+            É uma praia onde se pratica surf e kytesurf.
+        </item>
+    </string-array>
+
+    <string name="praias_daniela">Daniela</string>
+    <string-array name="praia_daniela_descricao">
+        <item>
+        Praia sem ondas, ideal para famílias, fica no Norte da Ilha.
+        </item>
+    </string-array>
+
+    <string name="praias_brava">Brava</string>
+    <string-array name="praias_brava_descricao">
+        <item>
+            Praia situada no Norte da Ilha, tem 1,5 km de extensão.
+        </item>
+        <item>
+            Nela são praticados o surf e o bodyboarding.
+        </item>
+    </string-array>
+
+    <string name="praias_mocambique">Moçambique</string>
+    <string-array name="praias_mocambique_descricao">
+        <item>
+            Com 8,6 km de extensão, é a praia mais extensa da ilha.
+        </item>
+        <item>
+            Muito procurada por surfistas.
+        </item>
+    </string-array>
+
+    <string name="praias_ingleses">Ingleses</string>
+    <string-array name="praias_ingleses_descricao">
+        <item>
+            Com 8,6 km de extensão, é a praia mais extensa da ilha.
+        </item>
+        <item>
+            Muito procurada por surfistas.
+        </item>
+    </string-array>
+
+    <!-- Trilhas -->
+
+    <string name="trilha_lampiao">Trilha do Lampião</string>
+    <string-array name="trilha_lampiao_detalhes">
+        <item>
+             A trilha Caminho do Morro do Lampião tem percurso total de 5km e vai até o topo do morro com 210 metros de altitude.
+         </item>
+            No topo, a vista é de 360º do centro, leste e sul de Florianópolis.
+        <item>
+            Para a realização do percurso são estimadas entre 3 e 4 horas.
+        </item>
+        <item>
+            Trilha bem marcada, entre a Mata Atlântica e a Lagoa da Conceição, passa pelas sete vilas.
+        </item>
+    </string-array>
+
+    <string name="trilha_galheta">Trilha da Galheta</string>
+    <string-array name="trilha_galheta_detalhes">
+        <item>
+            Alguns trechos do percurso desaparecem devido à vegetação, mas a trilha desce os morros em direção à Praia da Galheta.
+        </item>
+        <item>
+            Ali, o visitante pode dar um mergulho e matar a sede na fonte que fica bem no meio da praia.
+        </item>
+    </string-array>
+
+    <string name="trilha_campeche">Trilha Ilha do Campeche</string>
+    <string-array name="trilha_campeche_detalhes">
+        <item>
+            A ilha fica em frente ao Pontal do Campeche, sendo considerado o mais importante sítio
+            arqueológico de Florianópolis.
+        </item>
+        <item>
+            Um local místico, onde homens primitivos viveram há cerca de 5 mil anos, deixando como grande legado
+            a maior concentração de inscrições rupestres de Santa Catarina.
+        </item>
+    </string-array>
+
+    <string name="trilha_pocao">Trilha do Poção</string>
+    <string-array name="trilha_pocao_detalhes">
+        <item>
+        O Poção do Córrego Grande, como é chamada a melhor queda d’água da Ilha, fica a oito quilômetros
+        região central da cidade, em um bairro residencial em franca expansão imobiliária.
+        </item>
+    </string-array>
+
+    <string name="trilha_lagoinha">Trilha Lagoinha do Leste</string>
+    <string-array name="trilha_lagoinha_detalhes">
+        <item>
+            A praia ainda preserva as características de quando os primeiros imigrantes aportaram nestas terras.
+        </item>
+        <item>
+            A Lagoinha, como é carinhosamente chamada pelos ilhéus, impressiona seus visitantes com sua beleza, seu ar selvagem e seus mistérios.
+        </item>
+        <item>
+            Praia de mar aberto e águas cristalinas localizada no Sul da Ilha, a Lagoinha fica espremida entre dois costões que entram no oceano,
+            formando quase uma pequena enseada de pouco mais que um quilômetro
+        </item>
+    </string-array>
+
+    <string name="trilha_rio_vermelho">Trilha do Rio Vermelho</string>
+    <string-array name="trilha_rio_vermelho_detalhes">
+        <item>
+            A Trilha Ecológica do Rio Vermelho proporciona momentos de lazer e conta a história dos animais
+            da Trilha com a intenção de estimular o desenvolvimento da consciência ambiental.
+        </item>
+        <item>
+            São mais de 35 espécies catalogadas como macacos, jabutis, aracuãs, araras e papagaios.
+        </item>
+    </string-array>
+
+</resources>

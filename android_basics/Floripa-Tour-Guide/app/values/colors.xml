@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#15306F</color>
+    <color name="colorPrimaryDark">#234CA3</color>
+    <color name="colorAccent">#062896</color>
+    <color name="tabBarTextSelected">#ffffff</color>
+    <color name="actionBarPrimaryText">#041041</color>
+    <color name="itemTitleText">#000000</color>
+</resources>
